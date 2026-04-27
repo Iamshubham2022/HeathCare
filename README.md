@@ -30,6 +30,10 @@ Run:
 ```bash
 npm run dev
 ```
+```bash
+Email: - jaiswalshu39@gmail.com
+Passsword :-  shubh@123
+```
 
 ## App routes
 
