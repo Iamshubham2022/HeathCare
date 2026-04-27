@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react'
-import { useLocation } from 'react-router-dom'
 import { Button } from '../components/Button'
 import { Callout } from '../components/Callout'
 import { TextField } from '../components/TextField'
@@ -11,15 +10,12 @@ function isValidEmail(email: string) {
 }
 
 export function LoginPage() {
-  const location = useLocation()
   const { signIn, error: authError } = useAuth()
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [submitting, setSubmitting] = useState(false)
   const [formError, setFormError] = useState<string | null>(null)
-
-  const from = (location.state as { from?: string } | null)?.from
 
   const emailError = useMemo(() => {
     if (!email) return 'Email is required.'
@@ -65,12 +61,6 @@ export function LoginPage() {
             <div className={styles.subtitle}>Access your healthcare workspace</div>
           </div>
         </div>
-
-        {from ? (
-          <Callout title="You must sign in" variant="info">
-            Continue to <code>{from}</code> after signing in.
-          </Callout>
-        ) : null}
 
         {authError ? (
           <Callout title="Firebase Auth error" variant="error">
