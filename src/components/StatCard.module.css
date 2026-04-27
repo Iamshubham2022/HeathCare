@@ -1,0 +1,46 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px 14px;
+  background: rgba(127, 127, 127, 0.03);
+  box-shadow: var(--shadow);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.label {
+  font-size: 12px;
+  color: var(--text);
+  font-weight: 650;
+}
+
+.icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  background: rgba(0, 122, 255, 0.08);
+  color: var(--text-h);
+}
+
+.value {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 850;
+  color: var(--text-h);
+  letter-spacing: -0.3px;
+}
+
+.hint {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--text);
+}
+

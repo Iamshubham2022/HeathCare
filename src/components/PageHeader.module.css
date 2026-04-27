@@ -1,0 +1,28 @@
+.wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.title {
+  color: var(--text-h);
+  font-weight: 850;
+  font-size: 24px;
+  letter-spacing: -0.4px;
+}
+
+.subtitle {
+  margin-top: 4px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+

@@ -1,0 +1,30 @@
+.wrap {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(127, 127, 127, 0.04);
+  padding: 2px;
+  gap: 2px;
+}
+
+.btn {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 650;
+  font-size: 13px;
+}
+
+.btn:hover {
+  background: rgba(127, 127, 127, 0.09);
+  color: var(--text-h);
+}
+
+.active {
+  background: rgba(0, 122, 255, 0.14);
+  color: var(--text-h);
+}
+

@@ -1,0 +1,64 @@
+.wrap {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 440px;
+  max-width: 100%;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: rgba(127, 127, 127, 0.035);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+}
+
+.header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 4px 4px 8px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: var(--text-h);
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.15), rgba(170, 59, 255, 0.18));
+}
+
+.title {
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--text-h);
+}
+
+.subtitle {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+  padding: 4px;
+}
+
+.footer {
+  padding: 2px 4px 0;
+}
+
+.footerHint {
+  font-size: 12px;
+  color: var(--text);
+}
+
