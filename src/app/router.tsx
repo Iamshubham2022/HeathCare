@@ -12,6 +12,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         loader: () => redirect('/dashboard'),
+        Component: () => null,
       },
       {
         path: '/login',
@@ -27,7 +28,7 @@ export const router = createBrowserRouter([
           </ProtectedRoute>
         ),
         children: [
-          { index: true, loader: () => redirect('/dashboard') },
+          { index: true, loader: () => redirect('/dashboard'), Component: () => null },
           {
             path: '/dashboard',
             lazy: async () => {
